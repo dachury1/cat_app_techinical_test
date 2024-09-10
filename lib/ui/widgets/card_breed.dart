@@ -13,6 +13,11 @@ class CardBreed extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      highlightColor: Colors.transparent,
+      focusColor: Colors.transparent,
+      hoverColor: Colors.transparent,
+      splashColor: Colors.transparent,
+      overlayColor: const WidgetStatePropertyAll(Colors.transparent),
       onTap: () {
         Navigator.push(
           context,

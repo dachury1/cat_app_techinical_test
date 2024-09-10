@@ -2,7 +2,6 @@ import 'package:cat_app_technical_test/model/breed.dart';
 import 'package:cat_app_technical_test/repositories/cat_repository.dart';
 import 'package:cat_app_technical_test/ui/widgets/card_breed.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
@@ -65,7 +64,7 @@ class _LandingPageState extends State<LandingPage> {
 
   Widget _searchBar() {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 15),
+      padding: const EdgeInsets.symmetric(horizontal: 15).copyWith(bottom: 20),
       child: SearchBar(
         hintText: 'Type your breed',
         shape: WidgetStatePropertyAll(
@@ -96,6 +95,7 @@ class _LandingPageState extends State<LandingPage> {
         }
         return Expanded(
           child: ListView(
+            padding: EdgeInsets.zero,
             children: widgets,
           ),
         );

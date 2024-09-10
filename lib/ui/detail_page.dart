@@ -29,6 +29,11 @@ class _DetailPageState extends State<DetailPage> {
     return Scaffold(
       appBar: AppBar(
         leading: InkWell(
+          highlightColor: Colors.transparent,
+          focusColor: Colors.transparent,
+          hoverColor: Colors.transparent,
+          splashColor: Colors.transparent,
+          overlayColor: const WidgetStatePropertyAll(Colors.transparent),
           onTap: () => Navigator.pop(context),
           child: const SizedBox(
             width: 30,
